@@ -1,5 +1,7 @@
 :root{--ink:#031323;--night:#071f35;--cream:#eef8ff;--aqua:#6deaff;--violet:#8bb8ff;--muted:#8ba8bd}
 body{background:var(--ink);color:var(--cream)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.15;background-image:linear-gradient(#62ddff12 1px,transparent 1px),linear-gradient(90deg,#62ddff12 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.noise{opacity:.025}
 .topbar{background:linear-gradient(180deg,#031323e8 0%,#03132388 68%,transparent 100%);max-width:none;padding-left:max(32px,calc((100vw - 1240px)/2));padding-right:max(32px,calc((100vw - 1240px)/2))}
 .topbar{backdrop-filter:blur(12px);border-bottom:1px solid #65dfff1c}
 .brand{transition:transform .2s ease}.brand:hover{transform:translateY(-1px)}
@@ -8,9 +10,13 @@ body{background:var(--ink);color:var(--cream)}
 .brand small,.topbar nav a:hover{color:var(--aqua)}
 .hero{background:linear-gradient(90deg,rgba(3,19,35,.95) 0%,rgba(4,50,78,.68) 54%,rgba(4,19,38,.28) 100%),url("images/aquarius-age-background.png") center/cover no-repeat}
 .hero{border:1px solid #4ed9f52b;border-radius:0 0 42px 42px;box-shadow:0 28px 80px #00101e80,inset 0 1px #c8f6ff14;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(circle at 76% 38%,#64eaff1e 0 1px,transparent 2px),radial-gradient(circle at 76% 38%,transparent 0 170px,#69eaff12 171px 172px,transparent 173px),linear-gradient(90deg,transparent 0 68%,#6deaff08 68.1% 68.2%,transparent 68.3%)}
+.hero:after{background:linear-gradient(180deg,transparent 46%,#020d1b 100%),repeating-linear-gradient(0deg,transparent 0 5px,#72eaff06 6px 7px)}
+.hero-copy,.hero-orbit{z-index:1}
 .hero-copy{position:relative;z-index:2;padding:32px 34px;border:1px solid #9cefff26;border-radius:24px;background:linear-gradient(135deg,#031323b8,#0a456080);box-shadow:0 22px 55px #00101e59,inset 0 1px #d5fbff12;backdrop-filter:blur(7px)}
 .hero-orbit{filter:drop-shadow(0 20px 35px #00101e80)}
 .main-orb{background:radial-gradient(circle at 36% 26%,#b9fbff,#3d82d0 48%,#071e45 78%);border-color:#a3f5ff88;color:#021426;box-shadow:0 0 0 1px #b7f7ff22,0 0 42px #35d8ff3d}
+.main-orb:before{content:"";position:absolute;inset:-12px;border:1px solid #6deaff5c;border-radius:50%;box-shadow:0 0 28px #6deaff33;animation:orbitPulse 4s ease-in-out infinite}
 .small-orb{background:linear-gradient(145deg,#0a3455e6,#071a34e6);border-color:#66defe66;box-shadow:0 12px 24px #00101e66}
 .one,.two,.three{color:#8beeff}.two{color:#b9d2ff}.three{color:#ffdca2}
 .hero h1 em,.hero h1 em:after{color:var(--aqua)}
@@ -19,6 +25,7 @@ body{background:var(--ink);color:var(--cream)}
 .preview{background-color:#072138;border-color:#1f6684;box-shadow:0 20px 50px #00101e66}
 .project-card{transition:transform .25s ease,filter .25s ease}.project-card:hover{transform:translateY(-6px);filter:saturate(1.08)}
 .project-card:hover .preview{border-color:#63eaff88;box-shadow:0 24px 55px #00101eb3,0 0 0 1px #63eaff22}
+.project-card .preview:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,#9bf4ff0b 0 16%,transparent 17% 82%,#9bf4ff08 83%);mix-blend-mode:screen}
 .open-project{border-color:#34758f;color:#bdeeff}.open-project:hover{background:var(--aqua);color:#031323;border-color:var(--aqua);box-shadow:0 0 18px #6deaff66}
 .project-info h3{color:#e9f6ff}
 .section-head>p,.intro{color:#b4d0df}
@@ -29,4 +36,7 @@ body{background:var(--ink);color:var(--cream)}
 footer{color:#82a9bf}footer strong{color:#7eeaff}
 dialog{background:linear-gradient(145deg,#07192c,#082943);border-color:#31819e}
 .dialog-chips span{border-color:#2989a7;color:#85f3ff}
+.ticker{position:relative;background:#031a2bcc;box-shadow:0 0 24px #41d8ff0d inset}
+.button.primary{box-shadow:0 0 22px #6deaff3b}.button.primary:hover{box-shadow:0 0 32px #6deaff7a;transform:translateY(-2px)}
+@keyframes orbitPulse{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.07);opacity:1}}
 @media(max-width:800px){.topbar{padding-left:20px;padding-right:20px}.hero{border-left:0;border-right:0;border-radius:0 0 24px 24px}.hero-copy{padding:24px 20px;border-radius:18px;background:linear-gradient(135deg,#031323c7,#0a45608a)}.project-card:hover{transform:none}}
