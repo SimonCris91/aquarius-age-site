@@ -1,0 +1,19 @@
+:root{--ink:#031323;--night:#071f35;--cream:#eef8ff;--aqua:#6deaff;--violet:#8bb8ff;--muted:#8ba8bd}
+body{background:var(--ink);color:var(--cream)}
+.topbar{background:linear-gradient(180deg,#031323e8 0%,#03132388 68%,transparent 100%);max-width:none;padding-left:max(32px,calc((100vw - 1240px)/2));padding-right:max(32px,calc((100vw - 1240px)/2))}
+.brand-mark{border-color:#62eaff99;color:var(--aqua);box-shadow:0 0 20px #36bfe744}
+.brand small,.topbar nav a:hover{color:var(--aqua)}
+.hero{background:linear-gradient(90deg,rgba(3,19,35,.95) 0%,rgba(4,50,78,.68) 54%,rgba(4,19,38,.28) 100%),url("images/aquarius-age-background.png") center/cover no-repeat}
+.hero h1 em,.hero h1 em:after{color:var(--aqua)}
+.hero h1 em:after{background:var(--violet)}
+.ticker{border-color:#1e5a76;color:#b6e9ff}
+.preview{background-color:#072138;border-color:#1f6684;box-shadow:0 20px 50px #00101e66}
+.project-info h3{color:#e9f6ff}
+.section-head>p,.intro{color:#b4d0df}
+.approach{background:linear-gradient(135deg,#06263e 0%,#0b607d 72%,#184d78 100%);color:#effbff}
+.approach .eyebrow{color:#78efff}.approach .eyebrow span{background:#78efff}
+.principles{border-color:#66a8bc}.principles span{border-color:#66a8bc;color:#b5eaff}.principles b{color:#f0fbff}
+footer{color:#82a9bf}footer strong{color:#7eeaff}
+dialog{background:linear-gradient(145deg,#07192c,#082943);border-color:#31819e}
+.dialog-chips span{border-color:#2989a7;color:#85f3ff}
+@media(max-width:800px){.topbar{padding-left:20px;padding-right:20px}}
