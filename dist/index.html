@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="real-previews.css" />
+    <link rel="stylesheet" href="modal-overrides.css" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -101,7 +102,7 @@
       </section>
     </main>
     <footer><span>© 2026 AQUARIUS AGE</span><strong>DI SIMONE FEO</strong><span>MADE WITH CURIOSITY ✦</span></footer>
-    <dialog id="projectDialog"><button class="close-dialog" aria-label="Chiudi">×</button><p class="eyebrow"><span></span> DETTAGLIO PROGETTO</p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><dl><div><dt>Stack</dt><dd id="dialogStack"></dd></div><div><dt>Stato verificato</dt><dd id="dialogState"></dd></div><div><dt>Percorso</dt><dd id="dialogPath"></dd></div></dl></dialog>
+    <dialog id="projectDialog"><button class="close-dialog" aria-label="Chiudi">×</button><div class="dialog-layout"><div id="dialogVisual" class="dialog-visual" aria-label="Anteprima del progetto"></div><div class="dialog-copy"><p class="eyebrow"><span></span> PROGETTO</p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-chips"><span id="dialogStack"></span><span id="dialogState"></span></div><p class="dialog-note">Sorgenti locali verificate nel workspace di Simone Feo.</p></div></div></dialog>
     <script src="app.js"></script>
   </body>
 </html>

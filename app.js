@@ -1,5 +1,6 @@
 const dialog = document.querySelector('#projectDialog');
 const fields = {
+  visual: document.querySelector('#dialogVisual'),
   title: document.querySelector('#dialogTitle'),
   description: document.querySelector('#dialogDescription'),
   stack: document.querySelector('#dialogStack'),
@@ -10,11 +11,12 @@ const fields = {
 document.querySelectorAll('.open-project').forEach((button) => {
   button.addEventListener('click', () => {
     const card = button.closest('.project-card');
+    fields.visual.replaceChildren(card.querySelector('.preview').cloneNode(true));
+    fields.visual.querySelector('.preview').removeAttribute('aria-label');
     fields.title.textContent = card.dataset.project;
     fields.description.textContent = card.dataset.description;
     fields.stack.textContent = card.dataset.stack;
-    fields.state.textContent = card.dataset.state;
-    fields.path.textContent = card.dataset.path;
+    fields.state.textContent = card.dataset.state.replace(' nel workspace', '').replace(' nel workspace', '');
     dialog.showModal();
   });
 });
