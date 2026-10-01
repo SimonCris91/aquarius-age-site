@@ -1,0 +1,9 @@
+/* Materiale originale dai rispettivi progetti: non sono illustrazioni di portfolio. */
+.preview.yacht{background:#06152b url("images/olbia-yachting.png") center/cover no-repeat}
+.preview.signum{background:#172562 url("images/signum-aura.png") center/cover no-repeat}
+.preview.metal{background:#18221e url("preview-lavormetal.png") center/cover no-repeat}
+.preview.nexus{background:#030906 url("preview-nexus.png") center/cover no-repeat}
+.preview.finder{background:#152231 url("images/account-finder.png") center/cover no-repeat}
+.preview.yacht>*:not(.browser),.preview.signum>*:not(.browser),.preview.metal>*:not(.browser),.preview.nexus>*:not(.browser),.preview.finder>*:not(.browser){display:none}
+.preview.yacht .browser,.preview.signum .browser,.preview.metal .browser,.preview.nexus .browser,.preview.finder .browser{background:linear-gradient(90deg,#070918c9,#07091855)}
+.preview.yacht:after,.preview.signum:after,.preview.metal:after,.preview.nexus:after,.preview.finder:after{content:"PREVIEW REALE";position:absolute;right:10px;bottom:10px;padding:6px 8px;border-radius:4px;background:#090b1dcc;color:#a8ffe5;font:8px 'DM Mono';letter-spacing:.13em;z-index:4}
