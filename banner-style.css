@@ -7,7 +7,12 @@ body{background:var(--ink);color:var(--cream)}
 .brand-mark{border-color:#62eaff99;color:var(--aqua);box-shadow:0 0 20px #36bfe744}
 .brand small,.topbar nav a:hover{color:var(--aqua)}
 .hero{background:linear-gradient(90deg,rgba(3,19,35,.95) 0%,rgba(4,50,78,.68) 54%,rgba(4,19,38,.28) 100%),url("images/aquarius-age-background.png") center/cover no-repeat}
-.hero{border:1px solid #4ed9f52b;box-shadow:0 28px 80px #00101e80, inset 0 1px #c8f6ff14}
+.hero{border:1px solid #4ed9f52b;border-radius:0 0 42px 42px;box-shadow:0 28px 80px #00101e80,inset 0 1px #c8f6ff14;overflow:hidden}
+.hero-copy{position:relative;z-index:2;padding:32px 34px;border:1px solid #9cefff26;border-radius:24px;background:linear-gradient(135deg,#031323b8,#0a456080);box-shadow:0 22px 55px #00101e59,inset 0 1px #d5fbff12;backdrop-filter:blur(7px)}
+.hero-orbit{filter:drop-shadow(0 20px 35px #00101e80)}
+.main-orb{background:radial-gradient(circle at 36% 26%,#b9fbff,#3d82d0 48%,#071e45 78%);border-color:#a3f5ff88;color:#021426;box-shadow:0 0 0 1px #b7f7ff22,0 0 42px #35d8ff3d}
+.small-orb{background:linear-gradient(145deg,#0a3455e6,#071a34e6);border-color:#66defe66;box-shadow:0 12px 24px #00101e66}
+.one,.two,.three{color:#8beeff}.two{color:#b9d2ff}.three{color:#ffdca2}
 .hero h1 em,.hero h1 em:after{color:var(--aqua)}
 .hero h1 em:after{background:var(--violet)}
 .ticker{border-color:#1e5a76;color:#b6e9ff}
@@ -24,4 +29,4 @@ body{background:var(--ink);color:var(--cream)}
 footer{color:#82a9bf}footer strong{color:#7eeaff}
 dialog{background:linear-gradient(145deg,#07192c,#082943);border-color:#31819e}
 .dialog-chips span{border-color:#2989a7;color:#85f3ff}
-@media(max-width:800px){.topbar{padding-left:20px;padding-right:20px}.hero{border-left:0;border-right:0;border-radius:0 0 24px 24px}.project-card:hover{transform:none}}
+@media(max-width:800px){.topbar{padding-left:20px;padding-right:20px}.hero{border-left:0;border-right:0;border-radius:0 0 24px 24px}.hero-copy{padding:24px 20px;border-radius:18px;background:linear-gradient(135deg,#031323c7,#0a45608a)}.project-card:hover{transform:none}}
