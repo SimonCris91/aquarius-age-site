@@ -1,5 +1,8 @@
 :root{--ink:#031323;--night:#071f35;--cream:#eef8ff;--aqua:#6deaff;--violet:#8bb8ff;--muted:#8ba8bd}
-body{background:var(--ink);color:var(--cream)}
+body{background:var(--ink);color:var(--cream);font-family:'DM Sans',Arial,sans-serif}
+.brand,.brand strong,.hero h1,.section-head h2,.approach h2,.project-info h3,dialog h2,.main-orb,.main-orb span,.small-orb{font-family:'Oxanium',Arial,sans-serif!important}
+.eyebrow,.ticker,.tags,.browser,.principles span,footer,.finder-search,.finder-list span,.super-head span,.super p{font-family:'Space Mono','Courier New',monospace!important}
+.hero h1{font-weight:600;letter-spacing:-.075em}.section-head h2,.approach h2{font-weight:600;letter-spacing:-.07em}.project-info h3{font-weight:600}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.15;background-image:linear-gradient(#62ddff12 1px,transparent 1px),linear-gradient(90deg,#62ddff12 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
 .noise{opacity:.025}
 .topbar{background:linear-gradient(180deg,#031323e8 0%,#03132388 68%,transparent 100%);max-width:none;padding-left:max(32px,calc((100vw - 1240px)/2));padding-right:max(32px,calc((100vw - 1240px)/2))}
