@@ -8,6 +8,27 @@ const fields = {
   path: document.querySelector('#dialogPath'),
 };
 
+const publicLinks = {
+  'Aquarius Age': 'https://aquariusageai.com',
+  'AEGIS Invest AI': 'https://aegis.aquariusageai.com',
+  'Signum Aura AI': 'https://signum.aquariusageai.com',
+  'Olbia Yachting Community': 'https://yachting.aquariusageai.com',
+  'LavorMetal': 'https://lavormetal.aquariusageai.com',
+};
+
+document.querySelectorAll('.project-card').forEach((card) => {
+  const url = publicLinks[card.dataset.project];
+  if (!url) return;
+  const link = document.createElement('a');
+  link.className = 'site-link';
+  link.href = url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = 'Apri sito ↗';
+  link.setAttribute('aria-label', `Apri il sito pubblico di ${card.dataset.project}`);
+  card.querySelector('.project-info').append(link);
+});
+
 document.querySelectorAll('.open-project').forEach((button) => {
   button.addEventListener('click', () => {
     const card = button.closest('.project-card');
