@@ -11,7 +11,7 @@ const fields = {
 const projectDescriptions = {
   'Aquarius Age': 'Portfolio centrale di Simone Feo che raccoglie prodotti digitali, applicazioni AI e progetti web in un’unica identità.',
   'AEGIS Invest AI': 'Dashboard Demo-first per leggere portafoglio, posizioni e risultati con controlli di rischio e separazione tra dati verificati e azioni autorizzate.',
-  'Olbia Yachting AI': 'Centro operativo nautico con AI per community, profili, operatori e percorsi di assistenza nel mondo della nautica.',
+  'Yachting Agent AI': 'Agente AI nautico per community, profili, operatori e percorsi di assistenza nel mondo della nautica.',
   'Signum Aura AI': 'App AI simbolica e personale che trasforma dati di nascita e percorsi scelti dall’utente in mappe, segni e interpretazioni guidate.',
   'Centro Operativo AI': 'Centro Operativo AI per calendario, attività di officina, mezzi, attrezzature, documenti e coordinamento del lavoro.',
   'AI Remote': 'Controller AI voice-first per telefono e dispositivi remoti, con canali separati, push-to-talk e una base pronta per la voce live.',
