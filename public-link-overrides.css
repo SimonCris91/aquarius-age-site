@@ -1,3 +1,35 @@
 .project-info{align-items:flex-start}
 .site-link{align-self:center;border:1px solid #45465e;border-radius:999px;padding:9px 11px;color:var(--aqua);font:700 10px 'DM Mono';letter-spacing:.03em;text-decoration:none;white-space:nowrap;transition:.2s}
 .site-link:hover{background:var(--aqua);color:var(--ink);border-color:var(--aqua);transform:translateY(-2px)}
+
+/* Aquarius Age minimal refresh: quiet surfaces, one gold accent, readable type. */
+:root{--ink:#0b111c;--night:#121a28;--cream:#f5f2ea;--aqua:#d8b56a;--violet:#aab5c7;--muted:#9aa6b8}
+body{font-family:'DM Sans',Arial,sans-serif;background:var(--ink)}
+.noise{opacity:.012}
+.topbar{height:76px;border-bottom:1px solid #263246}
+.brand{font-family:'DM Sans',Arial,sans-serif}
+.brand-mark{border-color:#d8b56a99;color:var(--aqua);box-shadow:0 0 18px #d8b56a22}
+.brand small,.eyebrow,.tags,.site-link{font-family:'Space Mono',monospace}
+.hero{min-height:540px;padding-top:42px}
+.hero h1,.section-head h2,.approach h2,.project-info h3,dialog h2{font-family:'DM Sans',Arial,sans-serif;letter-spacing:-.055em}
+.hero h1{font-weight:700}
+.hero h1 em{color:var(--aqua)}
+.hero h1 em:after{background:#d8b56a55;height:4px;bottom:-1px}
+.button{font-family:'DM Sans',Arial,sans-serif;border-radius:10px}
+.primary{background:var(--aqua);color:#17130a}
+.quiet{border-color:#39465b;color:#d7ddea}
+.hero-orbit{opacity:.72}
+.ticker{border-color:#263246;color:#b9c3d4}
+.portfolio{padding-top:92px}
+.filters button{border-color:#344055;font-family:'DM Sans',Arial,sans-serif}
+.filters button.active,.filters button:hover{background:var(--cream);color:var(--ink)}
+.preview{border:1px solid #2b394d;border-radius:12px;box-shadow:0 14px 34px #00000020}
+.project-info{padding-top:13px}
+.project-info h3{font-weight:650}
+.open-project{border-color:#3d4a5d}
+.open-project:hover{background:var(--aqua);border-color:var(--aqua)}
+.site-link{border-color:#4a596d;color:var(--aqua);font-size:9px}
+.site-link:hover{background:var(--aqua);color:#17130a;border-color:var(--aqua)}
+.approach{background:#d8b56a;color:#17130a}
+.approach .eyebrow{color:#51401d}.approach .eyebrow span{background:#51401d}
+dialog{border-color:#3b4a60;border-radius:14px;background:#121a28}
