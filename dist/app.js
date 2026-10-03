@@ -13,7 +13,7 @@ const projectDescriptions = {
   'AEGIS Invest AI': 'Dashboard Demo-first per leggere portafoglio, posizioni e risultati con controlli di rischio e separazione tra dati verificati e azioni autorizzate.',
   'Olbia Yachting Community': 'Centro operativo nautico con AI per community, profili, operatori e percorsi di assistenza nel mondo della nautica.',
   'Signum Aura AI': 'App AI simbolica e personale che trasforma dati di nascita e percorsi scelti dall’utente in mappe, segni e interpretazioni guidate.',
-  'LavorMetal': 'Centro Operativo AI per calendario, attività di officina, mezzi, attrezzature, documenti e coordinamento del lavoro.',
+  'Centro Operativo AI': 'Centro Operativo AI per calendario, attività di officina, mezzi, attrezzature, documenti e coordinamento del lavoro.',
   'AI Remote': 'Controller AI voice-first per telefono e dispositivi remoti, con canali separati, push-to-talk e una base pronta per la voce live.',
   'NEXUS Memory Protocol': 'PWA AI local-first per esercizi di memoria, sessioni guidate, indizi audio e statistiche personali senza dipendere da un server pubblico.',
   'Account Finder': 'Strumento AI privacy-first per organizzare gli indizi relativi agli account collegati a un indirizzo email senza raccogliere credenziali.',
