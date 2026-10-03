@@ -18,6 +18,7 @@ const projectDescriptions = {
   'NEXUS Memory Protocol': 'PWA AI local-first per esercizi di memoria, sessioni guidate, indizi audio e statistiche personali senza dipendere da un server pubblico.',
   'Account Finder': 'Strumento AI privacy-first per organizzare gli indizi relativi agli account collegati a un indirizzo email senza raccogliere credenziali.',
   'SuperEnalotto Research': 'Ambiente AI di ricerca per confronti storici e test prospettici con protocolli separati da qualsiasi promessa di previsione o profitto.',
+  'Numeri Lab AI': 'Laboratorio AI per analisi statistiche trasparenti di Lotto e SuperEnalotto, con confronti tra modelli, storico verificabile e test prospettici separati da qualsiasi promessa di previsione.',
 };
 
 document.querySelectorAll('.project-card').forEach((card) => {
