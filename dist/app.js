@@ -6,6 +6,7 @@ const fields = {
   stack: document.querySelector('#dialogStack'),
   state: document.querySelector('#dialogState'),
   path: document.querySelector('#dialogPath'),
+  link: document.querySelector('#dialogLink'),
 };
 
 const projectDescriptions = {
@@ -37,6 +38,9 @@ document.querySelectorAll('.open-project').forEach((button) => {
     fields.description.textContent = card.dataset.description;
     fields.stack.textContent = card.dataset.stack;
     fields.state.textContent = card.dataset.state.replace(' nel workspace', '').replace(' nel workspace', '');
+    const projectUrl = card.dataset.url;
+    fields.link.hidden = !projectUrl;
+    if (projectUrl) fields.link.href = projectUrl;
     dialog.showModal();
   });
 });
